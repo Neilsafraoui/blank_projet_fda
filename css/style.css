@@ -1,0 +1,61 @@
+/* font-family: 'Lora', serif;
+font-family: 'Roboto', sans-serif; */
+
+/* GENERIC */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif !important;
+}
+
+span, p, a{
+    font-family: 'Roboto', sans-serif !important;
+}
+
+
+/* BACKGROUNDS */
+
+/* BODY PREND PATTERN */
+body{
+    min-height: 100vh;
+    background-image: url("../img/square_bg.png");
+    /* background-position: center; */
+}
+
+main{
+    min-height: 100vh;
+}
+
+/* UK-CONTAINER PREND BG WHITE */
+
+.main-container{
+    background: #fdfdfd;
+}
+
+#welcome{
+    padding-top: 3%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.stylized-img-centered{
+    display: block;
+    border: 2px solid #ecf0f1;
+}
+
+.cta-link{
+    background-color: #16a085;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #ecf0f1;
+}
+
+.main-color-overwrite{
+    background-color: #16a085 !important;
+}
+
+.secondary-color-overwrite{
+    background-color: #2980b9 !important;
+}
+
+.third-color-overwrite{
+    background-color: #7f8c8d !important;
+}
