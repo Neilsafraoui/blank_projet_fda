@@ -1,6 +1,14 @@
 /* font-family: 'Lora', serif;
 font-family: 'Roboto', sans-serif; */
 
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    box-sizing: border-box;
+}
+
 /* GENERIC */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lora', serif !important;
@@ -15,8 +23,38 @@ span, p, a, button{
 header{
     height: 40px;
     background-color: #34495e;
-    padding: 0.5%;
-    text-align: right;
+    margin: 0;
+    /* padding: 0.5%; */
+    /* text-align: right; */
+}
+
+/* MAIN NAV */
+
+nav.main-nav{
+    text-transform: uppercase;
+    height: 100%;
+}
+
+nav.main-nav ul{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav.main-nav ul li{
+    display: inline-block;
+}
+
+nav.main-nav ul li a{
+    color: #ecf0f1;
+}
+
+#play {
+    border: 2px solid #f1c40f;
+    color: #f1c40f;
+    padding: 3px 40px;
 }
 
 /* LOGIN + SIGNUP */
@@ -65,12 +103,15 @@ header{
 /* BODY PREND PATTERN */
 body{
     min-height: 100vh;
+    /* height: 100%; */
     background-image: url("../img/square_bg.png");
     /* background-position: center; */
 }
 
 main{
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    /* min-height: 80%; */
+    padding-bottom: 1%;
 }
 
 .main-container{
