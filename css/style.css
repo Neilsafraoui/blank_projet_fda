@@ -6,10 +6,59 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Lora', serif !important;
 }
 
-span, p, a{
+span, p, a, button{
     font-family: 'Roboto', sans-serif !important;
 }
 
+/* MAIN ELEMENTS */
+
+header{
+    height: 40px;
+    background-color: #34495e;
+    padding: 0.5%;
+    text-align: right;
+}
+
+/* LOGIN + SIGNUP */
+
+.button-reskin{
+    font-weight: bold !important;
+    color:#ecf0f1 !important;
+    background: none;
+    border: none;
+}
+
+.button-reskin:hover{
+    border-bottom: 1px solid #ecf0f1 !important;
+}
+
+#header-login, #header-signup{
+    display: inline-block;
+}
+
+#header-signup{
+    color:#ecf0f1;
+    /* border-right: 2px solid #ecf0f1; */
+}
+
+#login, #signup{
+    background: none;
+    /* text-align: right;
+    display: inline-block; */
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+#signup{
+    border: 2px solid #ecf0f1;
+    color:#ecf0f1;
+}
+
+#login{
+    border: 2px solid #f39c12;
+    color:#f39c12;
+}
 
 /* BACKGROUNDS */
 
@@ -24,11 +73,11 @@ main{
     min-height: 100vh;
 }
 
-/* UK-CONTAINER PREND BG WHITE */
-
 .main-container{
     background: #fdfdfd;
 }
+
+/* WELCOME PAGE */
 
 #welcome{
     padding-top: 3%;
@@ -41,12 +90,7 @@ main{
     border: 2px solid #ecf0f1;
 }
 
-.cta-link{
-    background-color: #16a085;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: #ecf0f1;
-}
+/* COLORS */
 
 .main-color-overwrite{
     background-color: #16a085 !important;
@@ -59,3 +103,13 @@ main{
 .third-color-overwrite{
     background-color: #7f8c8d !important; 
 }
+
+/* OLD */
+
+/* 
+.cta-link{
+    background-color: #16a085;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #ecf0f1;
+} */

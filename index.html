@@ -20,7 +20,33 @@
     </head>
     <body>
         <!-- HEADER -->
-        <header></header>
+        <header>
+            <div class="uk-inline">
+                <button class="uk-button button-reskin" type="button">INSCRIPTION</button>
+                <div uk-dropdown="mode: click">
+                    <form>
+                        <fieldset class="uk-fieldset">
+                        <legend class="uk-legend uk-text-left">Inscription</legend>
+                        <hr class="uk-margin-remove-top">    
+                            <input type="text" name="login" placeholder="Login" class="uk-input uk-margin-small-bottom"/>
+                            <input type="password" name="pass" placeholder="Password" class="uk-input uk-margin-small-bottom"/>
+                            <input type="submit" name="submit" value="S'INSCRIRE" class="uk-button uk-button-primary uk-width-1-1" />
+                        </fieldset>    
+                    </form>
+                </div>
+                <button class="uk-button button-reskin" type="button">CONNEXION</button>
+                <div uk-dropdown="mode: click">
+                    <form>
+                        <fieldset class="uk-fieldset">
+                        <legend class="uk-legend uk-text-left">Connexion</legend>
+                        <hr class="uk-margin-remove-top"> 
+                        <input type="text" name="login" placeholder="Login" class="uk-input uk-margin-small-bottom"/>
+                        <input type="password" name="pass" placeholder="Password" class="uk-input uk-margin-small-bottom"/>
+                        <input type="submit" name="submit" value="SE CONNECTER" class="uk-button uk-button-primary uk-width-1-1"/>
+                    </form>
+                </div>
+            </div>
+        </header>
         <!-- MAIN -->
         <main class="uk-container-small uk-margin-auto main-container uk-box-shadow-small">
             <div class="uk-width-5-6 uk-margin-auto">
@@ -38,15 +64,32 @@
                 <hr>
                 <a href="play.html" class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom main-color-overwrite">Jouer</a>
                 <a href="scores.html" class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom third-color-overwrite">Voir les scores</a>
-                <hr>
                 <!-- LOGIN/SIGNUP -->
-                <p> Vous avez déjà un compte </p>
-                <a href="login.html">Se connecter</a>
-                <p> Vous n'êtes pas inscrit </p>
-                <a href="signup.html">S'inscrire</a> 
             </div>
         </main>
         <!-- FOOTER -->
         <footer></footer>
     </body>
 </html>
+
+<!-- OLD -->
+
+<!-- <div id="header-signup">
+                <span> Vous n'avez pas de compte ?</span>
+                <a href="signup.html">S'inscrire</a> 
+            </div>
+            <div id="header-login"> -->
+                <!-- <span> Vous avez déjà un compte </span> -->
+                <!-- <form>
+                    <input type="text" name="login" placeholder="Login"/>
+                    <input type="password" name="pass" placeholder="Password" />
+                    <input type="submit" name="submit" value="Se connecter" />
+                </form>
+            </div> -->
+            <!-- <a href="login.html">Se connecter</a> -->
+            <!-- <div id="header-signup">
+                <span> Vous n'êtes pas inscrit </span>
+                <a href="signup.html">S'inscrire</a> 
+            </div> -->
+            <!-- <button id="login">Connexion</button>
+            <button id="signup">Inscription</button> -->
