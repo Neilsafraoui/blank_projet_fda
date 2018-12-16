@@ -28,8 +28,15 @@ new Vue({
     el: '#app',
     data: {
         rows: 5,
-        selfSize: 600,
-        highlighted: false
+        selfSize: 300,
+        highlighted: false,
+        started: false,
+        difficulty: {
+            none: 0,
+            facile: 1,
+            normal: 2,
+            difficile: 3
+        }
     },
     computed: {
         h: function(){
@@ -48,6 +55,14 @@ new Vue({
             var index = Math.floor(Math.random()*alphabet.length);
             var l = alphabet[index];
             return l;
+        },
+        initGame(){
+            this.difficulty = 0;
+        },
+        startGame(diff){
+            this.difficulty = diff;
+            console.log("difficulty : "+this.difficulty);
+            this.started = true;
         }
         // },
         // highlight: function(){
