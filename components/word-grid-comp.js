@@ -60,7 +60,21 @@ new Vue({
             this.difficulty = 0;
         },
         startGame(diff){
-            this.difficulty = diff;
+            switch(diff){
+                case 'facile':
+                    this.difficulty = this.difficulty.facile;
+                    this.rows = 5;
+                break;
+                case 'normal':
+                    this.difficulty = this.difficulty.normal;
+                    this.rows = 7;
+                break;
+                case 'difficile':
+                    this.difficulty = this.difficulty.difficile;
+                    this.rows = 9;
+                break;
+            }
+            //this.difficulty = diff;
             console.log("difficulty : "+this.difficulty);
             this.started = true;
         }
